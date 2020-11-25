@@ -1,0 +1,6 @@
+# Project exclude paths
+/front/index.js
+/front/index.js.map
+/node_modules/
+/src/index.js
+/src/index.js.map
