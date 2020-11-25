@@ -57,4 +57,5 @@ server.on("request", async (req: IncomingMessage, res: ServerResponse) => {
 
 server.listen(port, () => {
     console.log(`http://${host}:${port}/`);
+    console.log(`http://${host}:${port}/`);
 });
