@@ -51,8 +51,10 @@ server.on("request", async (req: IncomingMessage, res: ServerResponse) => {
         const body: string = await getRawBody(req);
         const result = JSON.parse(body);
         console.log(result);
-        res.end(body);
+        return res.end(body);
     }
+    res.writeHead(404);
+    res.end("not found");
 });
 
 server.listen(port, () => {
